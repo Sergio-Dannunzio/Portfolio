@@ -1,0 +1,13 @@
+body{
+    --text-color:rgba(34,34,34,1);
+    --backg-color:#d3d3d3;
+    --btn-color:#1b1919;
+    --list-color:rgba(34,34,34,1);
+}
+
+body.dark-theme {
+    --text-color:rgb(231, 231, 231);
+    --backg-color:#1b1919;
+    --btn-color:rgba(255,255,255,0.5);
+    --list-color:#666;
+}

@@ -1,0 +1,57 @@
+<div class="line">
+  <hr class="horizontal">
+  <hr class="horizontal-right">
+</div>
+<div class="header-container">
+  <div class="div-vertical">
+    <hr class="line-vertical-top">
+    <hr class="line-vertical">
+  </div>
+  <div class="personalLinks">
+        <ul>
+          <li>
+            <a (click)="toggleDarkTheme()" *ngIf="getClass(); else moon"><i class='fab fas fa-moon'></i></a>
+            <ng-template #moon>
+                <a (click)="toggleDarkTheme()"><i class='fas fa-sun'></i></a>
+            </ng-template>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sergio-dannunzio/" target="_blank">
+                <i class="fab fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Sergio-Dannunzio" target="_blank">
+                <i class="fab fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:sergiodannunzio@hotmail.com">
+                <i class="fab fa-brands fa-google"></i>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>Hi Im Sergio Web Developer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ullam numquam veniam ut quasi hic ab saepe earum sunt magnam non, error optio in, atque ipsam culpa dolor. Temporibus, labore?</p>
+    </div>
+    <div class="projects">
+        <h2>Projects</h2>
+        <a href="https://sergio-dannunzio.github.io/manos-a-la-obra-3/" target="_blank">First page</a>
+        
+        <a href="https://sergio-dannunzio.github.io/manos-a-la-obra-3/" target="_blank">Second page</a>
+        
+        <a href="https://sergio-dannunzio.github.io/manos-a-la-obra-3/" target="_blank">Third page</a>
+        
+        <a href="https://sergio-dannunzio.github.io/manos-a-la-obra-3/" target="_blank">Fourth page</a>
+    </div>
+    <div class="div-vertical-right">
+      <hr class="line-vertical-top">
+      <hr class="line-vertical">
+    </div>
+</div>
+<div class="line-down">
+  <hr class="horizontal">
+  <hr class="horizontal-right">
+</div>
