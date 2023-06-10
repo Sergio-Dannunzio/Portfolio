@@ -115,7 +115,7 @@ hr{
         margin-top: 10px;
       }
       h1{
-        font-size: 44px;
+        font-size: 56px;
         color: var(--text-color);
         margin: 0;
         margin-bottom: 20px;
@@ -148,7 +148,9 @@ hr{
           animation: opacityOff 6s ease-in;
         }
         p{
-          font-size: 18px;
+          width: 80%;
+          font-size: 16px;
+          font-family: 'Montserrat';
           color: var(--text-color);
           margin-left: 22px;
           margin-right: 12px;
@@ -230,7 +232,6 @@ hr{
           padding: 5px;
           color: var(--list-color);
           margin-left: 22px;
-          width: 40%;
           text-decoration: none;
           animation: goLefta 3s ease-in-out;
         }
@@ -243,7 +244,7 @@ hr{
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 110px;
+          width: 150px;
           height: 2px;
           background: linear-gradient(to left, var(--color-1), var(--color-2), var(--color-3));
           z-index: 1;
@@ -400,12 +401,15 @@ hr{
         .main-text{
           display: flex;
           margin-top: 76px;
+          .title{
+            width: 100%;
+          }
           .projects{
-            width: 60%;
-            margin-left: 42px;
+            width: 300px;
             a{
-              width: 70%;
+
               margin-left: 22px;
+              margin-right: 0px;
             }
           }
         }
