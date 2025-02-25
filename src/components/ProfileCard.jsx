@@ -11,11 +11,11 @@ import { FaGithub } from "react-icons/fa";
 const ProfileCard = () => {
   return (
     <>
-      <div className="flex flex-col items-center bg-[#171717] p-7 rounded-2xl border border-[#262626] max-w-[520px]">
+      <div className="flex flex-col items-center bg-[#17171790] p-7 rounded-2xl border border-[#262626] max-w-[520px]">
         <div className="flex justify-start w-full">
             <img src={profile} alt="" className="object-cover w-24 rounded-2xl"/>
             <div className="mx-4">
-                <p className="bg-[rgba(21,126,0,0.4)] bg-opacity-50 rounded-full text-[#00E800] text-xs w-fit px-2 py-0.5">Open to work</p>
+                <p className="bg-[rgba(21,126,0,0.4)] bg-opacity-50 rounded-full text-[#00e800aa] text-xs w-fit px-2 py-0.5">Open to work</p>
                 <h1 className="text-[#8b99f8] font-bold text-2xl">Sergio</h1>
                 <h3>I´m a</h3>
                 <h2 className="text-[#8b99f8] font-bold">Full Stack Developer</h2>

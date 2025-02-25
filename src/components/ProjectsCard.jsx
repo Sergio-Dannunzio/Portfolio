@@ -17,7 +17,7 @@ const images = [page1, page2, page3, page4, page5];
 const ProjectsCard = () => {
   return (
     <>
-      <div className="flex flex-col bg-[#171717] p-7 rounded-2xl border border-[#262626] max-w-[520px]">
+      <div className="flex flex-col bg-[#17171790] p-7 rounded-2xl border border-[#262626] max-w-[520px]">
         <div className="flex mb-2">
           <BsSuitcaseLgFill className="text-[#8b99f8] text-3xl mr-2"/>
           <h1 className="text-2xl">Projects</h1>
