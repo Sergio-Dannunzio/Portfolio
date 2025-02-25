@@ -5,9 +5,10 @@ import page2 from "../assets/page2.png";
 import page3 from "../assets/page3.png";
 import page4 from "../assets/page4.png";
 import page5 from "../assets/page5.png";
-import { IoIosMail } from "react-icons/io";
+import { FaCode } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode } from 'swiper/modules';
+import { BsSuitcaseLgFill } from "react-icons/bs";
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
@@ -16,10 +17,13 @@ const images = [page1, page2, page3, page4, page5];
 const ProjectsCard = () => {
   return (
     <>
-      <div className="flex flex-col bg-[#171717] p-7 rounded-2xl border border-[#262626] max-w-[480px]">
-        <h1 className="text-2xl">Projects</h1>
-        <p className="text-sm">Here are some of the projects i have worked on</p>
-        <div className="">
+      <div className="flex flex-col bg-[#171717] p-7 rounded-2xl border border-[#262626] max-w-[520px]">
+        <div className="flex mb-2">
+          <BsSuitcaseLgFill className="text-[#8b99f8] text-3xl mr-2"/>
+          <h1 className="text-2xl">Projects</h1>
+        </div>
+        <p className="text-sm mb-2 text-[#5d5d5d]">Here are some of the projects i have worked on</p>
+        <div className="opacity-50">
             <Swiper
                 modules={[Autoplay]}
                 spaceBetween={10}
@@ -47,7 +51,7 @@ const ProjectsCard = () => {
             </Swiper>
         </div>
         <div className="flex w-full mt-4 justify-center ">
-          <button className="bg-[#8b99f8] rounded-2xl p-3 w-1/2 mr-2 items-center flex justify-center text-[#000000]"><p className="pr-2 text-2xl"><IoIosMail  /></p> Hire Me</button>
+          <button className="bg-[#8b99f8] rounded-xl p-2.5 mr-2 items-center flex justify-center text-[#000000] text-[14px]"><p className="pr-2 text-[18px]"><FaCode   /></p> View All Projects</button>
         </div>
       </div>
     </>
