@@ -36,27 +36,30 @@ const Home = () => {
   return (
     <>
         <div>
-          <div className="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 grid-rows-2 md:grid-cols-2 md:grid-rows-3">
-            <div className="order-1 md:order-none">
-              <ProfileCard></ProfileCard>
+          <div className="flex flex-col">
+            <div className="flex lg:flex-row flex-col">
+              <div className="w-full">
+                <ProfileCard />
+              </div>
+              <div className="lg:max-w-1/3 max-w-full">
+                <ProjectsCard />
+              </div>
+              <div className="w-full">
+                <StackCard text={"Frontend Stack"} stacks={stacksFront} />
+              </div>
             </div>
-            <div className="order-3 md:order-none">
-              <ProjectsCard></ProjectsCard>
-            </div>
-            <div className="order-5 md:order-none">
-              <StackCard text={"Frontend Stack"} stacks={stacksFront}></StackCard>
-            </div>
-            <div className="order-2 md:order-none">
-              <StackCard StackCard text={"Develop Stacksssss"} stacks={stacksDeveloper}></StackCard>
-            </div>
-            <div className="order-4 md:order-none">
-              <StackCard text={"Backend Stack"} stacks={stacksBack}></StackCard>
-            </div>
-            <div className="order-6 md:order-none">
-              <StackCard StackCard text={"Develop Stack"} stacks={stacksDeveloper}></StackCard>
+            <div className="flex">
+              <div className="">
+                <StackCard text={"Develop Stacksssss"} stacks={stacksDeveloper} />
+              </div>
+              <div className="">
+                <StackCard text={"Backend Stack"} stacks={stacksBack} />
+              </div>
+              <div className="">
+                <StackCard text={"Develop Stack"} stacks={stacksDeveloper} />
+              </div>
             </div>
           </div>
-
         </div>
 
     </>

@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 const ProfileCard = () => {
   return (
     <>
-      <div className="flex flex-col items-center bg-[#17171790] p-7 rounded-2xl border border-[#262626] max-w-[520px]">
+      <div className="flex flex-col items-center bg-[#17171790] p-7 rounded-2xl border border-[#262626] w-full  h-fit">
         <div className="flex justify-start w-full">
             <img src={profile} alt="" className="object-cover w-24 rounded-2xl"/>
             <div className="mx-4">
