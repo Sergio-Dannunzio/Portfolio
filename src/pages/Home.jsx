@@ -12,6 +12,7 @@ import { DiMysql } from "react-icons/di";
 import { FaPhp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
+import FraseCard from "../components/FraseCard";
 
 
 const stacksFront = [
@@ -48,9 +49,9 @@ const Home = () => {
                 <StackCard text={"Frontend Stack"} stacks={stacksFront} />
               </div>
             </div>
-            <div className="flex">
+            <div className="flex lg:flex-row flex-col">
               <div className="">
-                <StackCard text={"Develop Stacksssss"} stacks={stacksDeveloper} />
+                <FraseCard></FraseCard>
               </div>
               <div className="">
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
