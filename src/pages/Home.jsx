@@ -50,7 +50,7 @@ const Home = () => {
             <div className="my-2">
               <ProjectsCard />
             </div>
-            <div className="my-2">
+            <div className="my-2 w-full items-center">
               <StatsGithub></StatsGithub>
             </div>
           </div>
