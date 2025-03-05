@@ -37,30 +37,32 @@ const stacksDeveloper = [
 const Home = () => {
   return (
     <>
-        <div>
-          <div className="flex flex-col">
-            <div className="flex lg:flex-row flex-col">
-              <div className="w-full">
-                <ProfileCard />
-              </div>
-              <div className="lg:max-w-1/3 max-w-full">
-                <ProjectsCard />
-                <StatsGithub></StatsGithub>
-              </div>
-              <div className="w-full">
-                <StackCard text={"Frontend Stack"} stacks={stacksFront} />
-              </div>
+        <div className="flex">
+          <div className="flex flex-col lg:max-w-1/3 w-full px-2">
+            <div className="my-2">
+              <ProfileCard></ProfileCard>
             </div>
-            <div className="flex lg:flex-row flex-col">
-              <div className="lg:max-w-1/3 w-full">
-                <StackCard text={"Backend Stack"} stacks={stacksBack} />
-              </div>
-              <div className="lg:max-w-1/3 w-full">
-                <FraseCard></FraseCard>
-              </div>
-              <div className="lg:max-w-1/3 w-full">
-                <StackCard text={"Develop Stack"} stacks={stacksDeveloper} />
-              </div>
+            <div className="my-2">
+              <StackCard text={"Backend Stack"} stacks={stacksBack} />
+            </div>
+          </div>
+          <div className="flex flex-col lg:max-w-1/3 w-full px-2">
+            <div className="my-2">
+              <ProjectsCard />
+            </div>
+            <div className="my-2">
+              <StatsGithub></StatsGithub>
+            </div>
+          </div>
+          <div className="flex flex-col lg:max-w-1/3 w-full px-2">
+            <div className="my-2">
+              <StackCard text={"Frontend Stack"} stacks={stacksFront} />
+            </div>
+            <div className="my-2">
+              <StackCard text={"Develop Stack"} stacks={stacksDeveloper} />
+            </div>
+            <div className="my-2">
+              <FraseCard></FraseCard>
             </div>
           </div>
         </div>
