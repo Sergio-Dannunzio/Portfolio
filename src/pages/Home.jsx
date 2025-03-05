@@ -13,6 +13,7 @@ import { FaPhp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import FraseCard from "../components/FraseCard";
+import StatsGithub from "../components/StatsGithub";
 
 
 const stacksFront = [
@@ -44,19 +45,20 @@ const Home = () => {
               </div>
               <div className="lg:max-w-1/3 max-w-full">
                 <ProjectsCard />
+                <StatsGithub></StatsGithub>
               </div>
               <div className="w-full">
                 <StackCard text={"Frontend Stack"} stacks={stacksFront} />
               </div>
             </div>
             <div className="flex lg:flex-row flex-col">
-              <div className="">
-                <FraseCard></FraseCard>
-              </div>
-              <div className="">
+              <div className="lg:max-w-1/3 w-full">
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
               </div>
-              <div className="">
+              <div className="lg:max-w-1/3 w-full">
+                <FraseCard></FraseCard>
+              </div>
+              <div className="lg:max-w-1/3 w-full">
                 <StackCard text={"Develop Stack"} stacks={stacksDeveloper} />
               </div>
             </div>
