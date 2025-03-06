@@ -37,32 +37,40 @@ const stacksDeveloper = [
 const Home = () => {
   return (
     <>
-        <div className="flex">
-          <div className="flex flex-col lg:max-w-1/3 w-full px-2">
-            <div className="my-2">
-              <ProfileCard></ProfileCard>
+        <div className="flex 2xl:flex-row flex-col">
+          <div className="flex 2xl:max-w-2/3 w-full">
+            <div className="flex flex-col max-w-1/2 w-full px-2">
+              <div className="my-2">
+                <ProfileCard></ProfileCard>
+              </div>
+              <div className="my-2">
+                <StackCard text={"Backend Stack"} stacks={stacksBack} />
+              </div>
             </div>
-            <div className="my-2">
-              <StackCard text={"Backend Stack"} stacks={stacksBack} />
+            <div className="flex flex-col max-w-1/2 w-full px-2">
+              <div className="my-2">
+                <ProjectsCard />
+              </div>
+              <div className="my-2 w-full items-center">
+                <StatsGithub></StatsGithub>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col lg:max-w-1/3 w-full px-2">
-            <div className="my-2">
-              <ProjectsCard />
-            </div>
-            <div className="my-2 w-full items-center">
-              <StatsGithub></StatsGithub>
-            </div>
-          </div>
-          <div className="flex flex-col lg:max-w-1/3 w-full px-2">
-            <div className="my-2">
-              <StackCard text={"Frontend Stack"} stacks={stacksFront} />
-            </div>
-            <div className="my-2">
-              <StackCard text={"Develop Stack"} stacks={stacksDeveloper} />
-            </div>
-            <div className="my-2">
-              <FraseCard></FraseCard>
+          <div className="flex w-full ">
+            <div className="flex flex-col w-full">
+              <div className="flex 2xl:flex-col w-full">
+                <div className="my-2 w-1/2 2xl:w-full px-2">
+                  <StackCard text={"Frontend Stack"} stacks={stacksFront} />
+                </div>
+                <div className="my-2 w-1/2 2xl:w-full px-2">
+                  <StackCard text={"Develop Stack"} stacks={stacksDeveloper} />
+                </div>
+              </div>
+              <div className="w-full px-2">
+                <div className="my-2">
+                  <FraseCard></FraseCard>
+                </div>
+              </div>
             </div>
           </div>
         </div>
