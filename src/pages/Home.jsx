@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <>
         <div className="flex flex-col 2xl:flex-row">
-          <div className="flex lg:flex-row flex-col w-full 2xl:max-w-2/3 items-center lg:items-start">
+          <div className="flex flex-col items-center w-full lg:flex-row 2xl:max-w-2/3 lg:items-start">
             <div className="flex flex-col w-full px-2 lg:max-w-1/2">
               <div className="my-2">
                 <ProfileCard></ProfileCard>
@@ -62,12 +62,15 @@ const Home = () => {
           </div>
           <div className="flex w-full ">
             <div className="flex flex-col w-full">
-              <div className="flex w-full 2xl:flex-col flex-col lg:flex-row items-center lg:items-start">
-                <div className="lg:w-1/2 px-2 my-2 2xl:w-full w-full">
+              <div className="flex flex-col items-center w-full 2xl:flex-col lg:flex-row lg:items-start">
+                <div className="w-full px-2 my-2 lg:w-1/2 2xl:w-full">
                   <StackCard text={"Frontend Stack"} stacks={stacksFront} />
                 </div>
-                <div className="lg:w-1/2 px-2 my-2 2xl:w-full w-full">
+                <div className="w-full px-2 my-2 lg:w-1/2 2xl:w-full">
                   <StackCard text={"Development Tools"} stacks={stacksDeveloper} />
+                </div>
+                <div className="w-full px-2 my-2 lg:hidden">
+                  <StatsGithub></StatsGithub>
                 </div>
               </div>
               <div className="w-full px-2">
