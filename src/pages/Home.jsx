@@ -42,8 +42,8 @@ const Home = () => {
   return (
     <>
         <div className="flex flex-col 2xl:flex-row">
-          <div className="flex w-full 2xl:max-w-2/3">
-            <div className="flex flex-col w-full px-2 max-w-1/2">
+          <div className="flex lg:flex-row flex-col w-full 2xl:max-w-2/3 items-center lg:items-start">
+            <div className="flex flex-col w-full px-2 lg:max-w-1/2">
               <div className="my-2">
                 <ProfileCard></ProfileCard>
               </div>
@@ -51,7 +51,7 @@ const Home = () => {
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
               </div>
             </div>
-            <div className="flex flex-col w-full px-2 max-w-1/2">
+            <div className="flex flex-col w-full px-2 lg:max-w-1/2">
               <div className="my-2">
                 <ProjectsCard />
               </div>
@@ -62,11 +62,11 @@ const Home = () => {
           </div>
           <div className="flex w-full ">
             <div className="flex flex-col w-full">
-              <div className="flex w-full 2xl:flex-col">
-                <div className="w-1/2 px-2 my-2 2xl:w-full">
+              <div className="flex w-full 2xl:flex-col flex-col lg:flex-row items-center lg:items-start">
+                <div className="lg:w-1/2 px-2 my-2 2xl:w-full w-full">
                   <StackCard text={"Frontend Stack"} stacks={stacksFront} />
                 </div>
-                <div className="w-1/2 px-2 my-2 2xl:w-full">
+                <div className="lg:w-1/2 px-2 my-2 2xl:w-full w-full">
                   <StackCard text={"Development Tools"} stacks={stacksDeveloper} />
                 </div>
               </div>
