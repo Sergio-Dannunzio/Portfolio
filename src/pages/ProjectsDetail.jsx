@@ -7,11 +7,27 @@ import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
 
 const stacks33 = [
-  { text: "Angular", bgcolor: "bg-red-500", color: "text-green-100", icon: <FaNodeJs  /> },
-  { text: "Typescript", bgcolor: "bg-blue-500", color: "text-green-100", icon: <FaNodeJs  /> },
-  { text: "Sass", bgcolor: "bg-green-500", color: "text-green-100", icon: <FaNodeJs  />  },
+  { text: "Angular", bgcolor: "bg-[#ff3a3a]/10", color: "text-[#ff3a3a]", icon: <FaNodeJs  /> },
+  { text: "Typescript", bgcolor: "bg-[#5B6FB6]/10", color: "text-[#5B6FB6]", icon: <SiTypescript  /> },
+  { text: "Sass", bgcolor: "bg-[#ff6ad5]/10", color: "text-[#ff6ad5]", icon: <FaSass  />  },
+];
+
+const stacksBarilo = [
+  { text: "React", bgcolor: "bg-[#0091FF]/10", color: "text-[#0091FF]", icon: <FaReact  />   },
+  { text: "Tailwind CSS", bgcolor: "bg-[#38BDF8]/10", color: "text-[#38BDF8]", icon: <RiTailwindCssFill  />  },
+  { text: "Node.js", bgcolor: "bg-[#339933]/10", color: "text-[#339933]", icon: <FaNodeJs  />   },
+  { text: "Java", bgcolor: "bg-[#999933]/10", color: "text-[#999933]", icon: <FaJava  />   },
+];
+
+const stacksCrypto = [
+  { text: "React", bgcolor: "bg-[#0091FF]/10", color: "text-[#0091FF]", icon: <FaReact  />   },
+  { text: "TypeScript", bgcolor: "bg-[#5B6FB6]/10", color: "text-[#5B6FB6]", icon: <SiTypescript  />   },
 ];
 
 const stacksTranquiliza = [
@@ -19,15 +35,9 @@ const stacksTranquiliza = [
   { text: "JavaScript", bgcolor: "bg-[#F7DF1E]/10", color: "text-[#F7DF1E]", icon: <SiJavascript  />  },
   { text: "Tailwind CSS", bgcolor: "bg-[#38BDF8]/10", color: "text-[#38BDF8]", icon: <RiTailwindCssFill  />  },
   { text: "Node.js", bgcolor: "bg-[#339933]/10", color: "text-[#339933]", icon: <FaNodeJs  />   },
+  { text: "Mongodb", bgcolor: "bg-[#789933]/10", color: "text-[#789933]", icon: <SiMongodb  />   },
 ];
 
-
-const stacksBack = [
-
-];
-const stacksDeveloper = [
-
-];
 
 const ProjectsDetail = () => {
     return (
@@ -43,13 +53,13 @@ const ProjectsDetail = () => {
                img={page3}
                 text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                 featured={""}
-                stacks={stacks33}></ProjectDetail>
+                stacks={stacksBarilo}></ProjectDetail>
             </div>
             <div className="flex">
               <ProjectDetail title={"Crypto market"} img={page4}
                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                featured={""}
-               stacks={stacks33}></ProjectDetail>
+               stacks={stacksCrypto}></ProjectDetail>
               <ProjectDetail title={"Tranquiliza 360°"} img={page5}
                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                featured={""}
