@@ -9,12 +9,20 @@ import { FaCode } from "react-icons/fa";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode } from 'swiper/modules';
 import { BsSuitcaseLgFill } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
 const images = [page1, page2, page3, page4, page5];
 
 const ProjectsCard = () => {
+  
+  const navigate = useNavigate();
+
+  const handleShowProjects = () => {
+    navigate(`/projects`);
+  };
+  
   return (
     <>
       <div className="flex flex-col bg-[#17171790] p-7 rounded-2xl border border-[#262626] w-full h-fit">
@@ -50,8 +58,9 @@ const ProjectsCard = () => {
                 <SwiperSlide><img src={page5} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
             </Swiper>
         </div>
-        <div className="flex w-full mt-4 justify-center ">
-          <button className="bg-[#8b99f8] rounded-xl p-2.5 mr-2 items-center flex justify-center text-[#000000] text-[14px]"><p className="pr-2 text-[18px]"><FaCode   /></p> View All Projects</button>
+        <div className="flex justify-center w-full mt-4 ">
+          <button className="bg-[#8b99f8] rounded-xl p-2.5 mr-2 items-center flex justify-center text-[#000000] text-[14px]" 
+          onClick={() => handleShowProjects()}><p className="pr-2 text-[18px]"><FaCode   /></p> View All Projects</button>
         </div>
       </div>
     </>

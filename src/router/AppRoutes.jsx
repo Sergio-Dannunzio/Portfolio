@@ -5,7 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "../pages/home";
-import ProjectDetail from "../pages/ProjectDetail";
+import ProjectsDetail from "../pages/ProjectsDetail";
 
 function AppRoutes() {
 
@@ -13,7 +13,7 @@ function AppRoutes() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/project" element={<ProjectDetail />} />
+        <Route path="/projects" element={<ProjectsDetail />} />
       </Routes>
     </>
   );
