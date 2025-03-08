@@ -52,10 +52,10 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-col w-full px-2 lg:max-w-1/2">
-              <div className="my-2">
+              <div className="hidden my-2 lg:block">
                 <ProjectsCard />
               </div>
-              <div className="items-center w-full my-2">
+              <div className="items-center hidden w-full my-2 lg:block">
                 <StatsGithub></StatsGithub>
               </div>
             </div>
@@ -71,6 +71,11 @@ const Home = () => {
                 </div>
                 <div className="w-full px-2 my-2 lg:hidden">
                   <StatsGithub></StatsGithub>
+                </div>
+              </div>
+              <div className="flex flex-col w-full px-2 lg:max-w-1/2">
+                <div className="my-2 lg:hidden">
+                  <ProjectsCard />
                 </div>
               </div>
               <div className="w-full px-2">
