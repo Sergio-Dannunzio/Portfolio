@@ -53,7 +53,8 @@ const ProjectsDetail = () => {
                img={page3}
                 text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                 featured={""}
-                stacks={stacksBarilo}></ProjectDetail>
+                stacks={stacksBarilo}
+                isfeatured={true}></ProjectDetail>
             </div>
             <div className="flex">
               <ProjectDetail title={"Crypto market"} img={page4}
