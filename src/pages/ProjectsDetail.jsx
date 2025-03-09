@@ -64,7 +64,8 @@ const ProjectsDetail = () => {
               <ProjectDetail title={"Tranquiliza 360°"} img={page5}
                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                featured={""}
-               stacks={stacksTranquiliza}></ProjectDetail>
+               stacks={stacksTranquiliza}
+               isfeatured={true}></ProjectDetail>
             </div>
           </div>
   

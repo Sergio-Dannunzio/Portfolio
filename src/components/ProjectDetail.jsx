@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 
 const ProjectDetail = ({title, text, isfeatured, img, stacks }) => {
@@ -24,9 +25,9 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks }) => {
                   ))}
                 </div>
             </div>
-            <div className="flex">
-                <button>Live Demo</button>
-                <button>Source</button>
+            <div className="flex items-center justify-center">
+                <button className="bg-[#8b99f8] rounded-xl p-3 w-1/3 mr-2 items-center flex justify-center text-[#000000]"><TbWorld className="mr-2" /> Live Demo</button>
+                <button className="bg-[#414141] rounded-xl p-3 w-1/3 ml-2 items-center flex justify-center">Source</button>
             </div>
         
       </div>
