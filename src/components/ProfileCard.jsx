@@ -16,7 +16,7 @@ const ProfileCard = () => {
             <img src={profile} alt="" className="object-cover w-24 rounded-2xl"/>
             <div className="mx-4">
                 <p className="bg-[rgba(21,126,0,0.4)] bg-opacity-50 rounded-full text-[#00e800aa] text-xs w-fit px-2 py-0.5">Open to work</p>
-                <h1 className="text-[#8b99f8] font-bold text-2xl">Sergio</h1>
+                <h1 className="text-[#8b99f8]  font-bold text-2xl">Sergio</h1>
                 <h3>I´m a</h3>
                 <h2 className="text-[#8b99f8] font-bold">Full Stack Developer</h2>
             </div>
@@ -28,8 +28,8 @@ const ProfileCard = () => {
 
         </div>
         <div className="flex w-full mt-4">
-          <button className="bg-[#8b99f8] rounded-2xl p-3 w-1/2 mr-2 items-center flex justify-center text-[#000000]"><p className="pr-2 text-2xl"><IoIosMail  /></p> Hire Me</button>
-          <button className="bg-[#414141] rounded-2xl p-3 w-1/2 ml-2 items-center flex justify-center"><p className="pr-2 text-2xl"><FaGithub  /></p>GitHub</button>
+          <button className="bg-[#8b99f8] hover:bg-[#8b99f8]/80 rounded-2xl p-3 w-1/2 mr-2 items-center flex justify-center text-[#000000]"><p className="pr-2 text-2xl"><IoIosMail  /></p> Hire Me</button>
+          <button className="bg-[#414141] hover:bg-[#414141]/80 rounded-2xl p-3 w-1/2 ml-2 items-center flex justify-center"><p className="pr-2 text-2xl"><FaGithub  /></p>GitHub</button>
         </div>
       </div>
     </>
