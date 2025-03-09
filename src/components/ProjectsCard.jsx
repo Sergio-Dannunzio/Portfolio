@@ -58,8 +58,8 @@ const ProjectsCard = () => {
                 <SwiperSlide><img src={page5} alt="" className=" rounded-xl h-[96px]"/></SwiperSlide>
             </Swiper>
         </div>
-        <div className="flex justify-center w-full mt-4 ">
-          <button className="bg-[#8b99f8] rounded-xl p-2.5 mr-2 items-center flex justify-center text-[#000000] text-[14px]" 
+        <div className="flex justify-center w-full mt-4">
+          <button className="bg-[#8b99f8] rounded-xl p-3 mt-3 items-center flex justify-center text-[#000000] text-[14px]" 
           onClick={() => handleShowProjects()}><p className="pr-2 text-[18px]"><FaCode   /></p> View All Projects</button>
         </div>
       </div>
