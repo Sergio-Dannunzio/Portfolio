@@ -50,6 +50,9 @@ const Home = () => {
               <div className="my-2">
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
               </div>
+              <div className="my-2 hidden 2xl:block">
+                  <FraseCard></FraseCard>
+                </div>
             </div>
             <div className="flex flex-col w-full px-2 lg:max-w-1/2">
               <div className="hidden my-2 lg:block">
@@ -79,7 +82,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="w-full px-2">
-                <div className="my-2">
+              <div className="my-2 lg:hidden">
                   <FraseCard></FraseCard>
                 </div>
               </div>
