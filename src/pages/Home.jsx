@@ -41,21 +41,21 @@ const stacksDeveloper = [
 const Home = () => {
   return (
     <>
-        <div className="flex flex-col 2xl:flex-row">
-          <div className="flex flex-col items-center w-full lg:flex-row 2xl:max-w-2/3 lg:items-start">
-            <div className="flex flex-col w-full px-2 lg:max-w-1/2">
-              <div className="my-2">
+        <div className="flex flex-col 2xl:flex-row xl:justify-between lg:items-center 2xl:items-start">
+          <div className="flex flex-col lg:flex-row 2xl:w-2/3 2xl:justify-around lg:justify-center">
+            <div className="flex flex-col px-2 lg:max-w-1/2 ">
+              <div className="my-2 w-full flex justify-center">
                 <ProfileCard></ProfileCard>
               </div>
-              <div className="my-2">
+              <div className="my-2 w-full flex justify-center">
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
               </div>
-              <div className="my-2 hidden 2xl:block">
+              <div className="my-2 hidden 2xl:flex 2xl:justify-center">
                   <FraseCard></FraseCard>
                 </div>
             </div>
-            <div className="flex flex-col w-full px-2 lg:max-w-1/2">
-              <div className="hidden my-2 lg:block">
+            <div className="flex flex-col px-2 lg:max-w-1/2">
+              <div className="hidden my-2 lg:flex lg:justify-center">
                 <ProjectsCard />
               </div>
               <div className="items-center hidden w-full my-2 lg:block">
@@ -63,26 +63,26 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full ">
+          <div className="flex w-full 2xl:w-1/3">
             <div className="flex flex-col w-full">
-              <div className="flex flex-col items-center w-full 2xl:flex-col lg:flex-row lg:items-start">
-                <div className="w-full px-2 my-2 lg:w-1/2 2xl:w-full">
+              <div className="flex flex-col justify-center items-center w-full 2xl:flex-col lg:flex-row lg:items-start">
+                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-end 2xl:justify-center">
                   <StackCard text={"Frontend Stack"} stacks={stacksFront} />
                 </div>
-                <div className="w-full px-2 my-2 lg:w-1/2 2xl:w-full">
+                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-start 2xl:justify-center">
                   <StackCard text={"Development Tools"} stacks={stacksDeveloper} />
                 </div>
-                <div className="w-full px-2 my-2 lg:hidden">
+                <div className="w-full px-2 my-2 lg:hidden flex justify-center">
                   <StatsGithub></StatsGithub>
                 </div>
               </div>
-              <div className="flex flex-col w-full px-2 lg:max-w-1/2">
-                <div className="my-2 lg:hidden">
+              <div className="flex flex-col w-full px-2 lg:max-w-1/2 ">
+                <div className="my-2 lg:hidden flex justify-center">
                   <ProjectsCard />
                 </div>
               </div>
               <div className="w-full px-2">
-              <div className="my-2 lg:hidden">
+              <div className="my-2 2xl:hidden flex justify-center">
                   <FraseCard></FraseCard>
                 </div>
               </div>

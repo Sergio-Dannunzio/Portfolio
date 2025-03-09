@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 const ProfileCard = () => {
   return (
     <>
-      <div className="flex flex-col items-center bg-[#17171790] p-7 rounded-2xl border border-[#262626] w-full  h-fit">
+      <div className="flex flex-col items-center bg-[#17171790] p-7 rounded-2xl border border-[#262626] max-w-[580px] w-full  h-fit">
         <div className="flex justify-start w-full">
             <img src={profile} alt="" className="object-cover w-24 rounded-2xl"/>
             <div className="mx-4">
@@ -25,9 +25,7 @@ const ProfileCard = () => {
             <CaractProfile text={"Spanish & English"} icon={<MdTranslate />}></CaractProfile>
             <CaractProfile text={"Argentina"} icon={<FaLocationDot />}></CaractProfile>
             <CaractProfile text={"23 y/o"} icon={<FaCalendar />}></CaractProfile>
-            <CaractProfile text={"Spanish & English"} icon={<MdTranslate />}></CaractProfile>
-            <CaractProfile text={"Argentina"} icon={<FaLocationDot />}></CaractProfile>
-            <CaractProfile text={"23 y/o"} icon={<FaCalendar />}></CaractProfile>
+
         </div>
         <div className="flex w-full mt-4">
           <button className="bg-[#8b99f8] rounded-2xl p-3 w-1/2 mr-2 items-center flex justify-center text-[#000000]"><p className="pr-2 text-2xl"><IoIosMail  /></p> Hire Me</button>

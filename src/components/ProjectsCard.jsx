@@ -25,7 +25,7 @@ const ProjectsCard = () => {
   
   return (
     <>
-      <div className="flex flex-col bg-[#17171790] p-7 rounded-2xl border border-[#262626] w-full h-fit">
+      <div className="flex flex-col bg-[#17171790] p-7 rounded-2xl border border-[#262626] max-w-[580px] w-full h-fit">
         <div className="flex mb-2">
           <BsSuitcaseLgFill className="text-[#8b99f8] text-3xl mr-2"/>
           <h1 className="text-2xl">Projects</h1>
@@ -35,7 +35,7 @@ const ProjectsCard = () => {
             <Swiper
                 modules={[Autoplay]}
                 spaceBetween={10}
-                slidesPerView={1.5}
+                slidesPerView={2.5}
                 autoplay={{ 
                     delay: 0, // Sin pausas entre las imágenes
                     disableOnInteraction: true, // Sigue funcionando al interactuar
@@ -46,16 +46,16 @@ const ProjectsCard = () => {
                 loopAdditionalSlides={images.length}
                 allowTouchMove={false}
                 >
-                <SwiperSlide><img src={page1} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page3} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page4} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page2} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page5} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page1} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page3} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page4} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page2} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
-                <SwiperSlide><img src={page5} alt="" className="mx-auto rounded-xl"/></SwiperSlide>
+                <SwiperSlide><img src={page1} alt="" className="rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page3} alt="" className=" rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page4} alt="" className=" rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page2} alt="" className="rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page5} alt="" className="rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page1} alt="" className="rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page3} alt="" className=" rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page4} alt="" className=" rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page2} alt="" className=" rounded-xl h-[96px]"/></SwiperSlide>
+                <SwiperSlide><img src={page5} alt="" className=" rounded-xl h-[96px]"/></SwiperSlide>
             </Swiper>
         </div>
         <div className="flex justify-center w-full mt-4 ">
