@@ -49,27 +49,31 @@ const ProjectsDetail = () => {
                 text={"loremaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaaa"}
                 featured={""}
                 stacks={stacks33}
-                href={"https://sergio-dannunzio.github.io/game-app/"}></ProjectDetail>
+                href={"https://sergio-dannunzio.github.io/game-app/"}
+                hrefCode={"https://github.com/Sergio-Dannunzio/game-app"}></ProjectDetail>
               <ProjectDetail title={"Bariló"}
                img={page3}
                 text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                 featured={""}
                 stacks={stacksBarilo}
                 isfeatured={true}
-                href={"https://barilo.vercel.app/"}></ProjectDetail>
+                href={"https://barilo.vercel.app/"}
+                hrefCode={"https://github.com/IgrowkerTraining/i003-barilo-front"}></ProjectDetail>
             </div>
             <div className="flex">
               <ProjectDetail title={"Crypto market"} img={page4}
                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                featured={""}
                stacks={stacksCrypto}
-               href={"https://sergio-dannunzio.github.io/crypto-tracker.github.io/"}></ProjectDetail>
+               href={"https://sergio-dannunzio.github.io/crypto-tracker.github.io/"}
+               hrefCode={"https://github.com/Sergio-Dannunzio/crypto-tracker.github.io"}></ProjectDetail>
               <ProjectDetail title={"Tranquiliza 360°"} img={page5}
                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                featured={""}
                stacks={stacksTranquiliza}
                isfeatured={true}
-               href={"https://tranquiliza360-pps.vercel.app/"}></ProjectDetail>
+               href={"https://tranquiliza360-pps.vercel.app/"}
+               hrefCode={"https://github.com/Sergio-Dannunzio/Tranquiliza360-PPS"}></ProjectDetail>
             </div>
           </div>
   
