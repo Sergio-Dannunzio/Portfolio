@@ -42,7 +42,7 @@ const stacksTranquiliza = [
 const ProjectsDetail = () => {
     return (
       <>
-          <div className="flex flex-col px-24 xl:px-64">
+          <div className="flex flex-col px-24 xl:px-72">
             <div className="flex w-full">
               <ProjectDetail title={"33 Inmortals"} 
                 img={page1} 
