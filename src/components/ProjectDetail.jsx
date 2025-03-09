@@ -1,9 +1,16 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
 
+const ProjectDetail = ({title, text, isfeatured, img, stacks, href }) => {
 
-const ProjectDetail = ({title, text, isfeatured, img, stacks }) => {
+  const navigate = useNavigate();
+
+  const handleShowProject = () => {
+    window.open(href, "_blank");
+  };
+
   return (
     <>
       <div className="flex flex-col bg-[#2020203e] rounded-xl my-4 justify-center mx-2">
@@ -26,7 +33,8 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks }) => {
                 </div>
             </div>
             <div className="flex items-center justify-center bg-[#414141]/30 py-4 mt-2 rounded-b-xl w-full">
-                <button className="bg-[#8b99f8] flex justify-center items-center w-1/3 p-3 rounded-xl hover:bg-[#8b99f8]/80 transition"><TbWorld className="mr-2" /> Live Demo</button>
+                <button className="bg-[#8b99f8] flex justify-center items-center w-1/3 p-3 rounded-xl hover:bg-[#8b99f8]/80 transition"
+                onClick={() => handleShowProject()}><TbWorld className="mr-2" /> Live Demo</button>
                 <button className="bg-[#414141] rounded-xl p-3 w-1/3 ml-2 items-center flex justify-center">Source</button>
             </div>
         

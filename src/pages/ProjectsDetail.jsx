@@ -48,24 +48,28 @@ const ProjectsDetail = () => {
                 img={page1} 
                 text={"loremaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaaa"}
                 featured={""}
-                stacks={stacks33}></ProjectDetail>
+                stacks={stacks33}
+                href={"https://sergio-dannunzio.github.io/game-app/"}></ProjectDetail>
               <ProjectDetail title={"Bariló"}
                img={page3}
                 text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                 featured={""}
                 stacks={stacksBarilo}
-                isfeatured={true}></ProjectDetail>
+                isfeatured={true}
+                href={"https://barilo.vercel.app/"}></ProjectDetail>
             </div>
             <div className="flex">
               <ProjectDetail title={"Crypto market"} img={page4}
                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                featured={""}
-               stacks={stacksCrypto}></ProjectDetail>
+               stacks={stacksCrypto}
+               href={"https://sergio-dannunzio.github.io/crypto-tracker.github.io/"}></ProjectDetail>
               <ProjectDetail title={"Tranquiliza 360°"} img={page5}
                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
                featured={""}
                stacks={stacksTranquiliza}
-               isfeatured={true}></ProjectDetail>
+               isfeatured={true}
+               href={"https://tranquiliza360-pps.vercel.app/"}></ProjectDetail>
             </div>
           </div>
   
