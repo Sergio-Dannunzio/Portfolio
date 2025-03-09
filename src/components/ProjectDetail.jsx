@@ -18,8 +18,11 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks, href, hrefCode }) 
 
   return (
     <>
-      <div className="flex flex-col bg-[#2020203e] rounded-xl my-4 justify-center mx-2">
-            <img src={img} alt="" className="w-full" />
+      <div className="group flex flex-col bg-[#2020203e] rounded-xl my-4 justify-center mx-2 overflow-hidden">
+        <div className="relative w-full overflow-hidden">
+          <img src={img} alt="" className=" w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-opacity duration-300 ease-in-out"></div>
+        </div>
             <div className="px-4 py-2">
                 <div className="flex justify-between items-center">
                     <h1 className="text-lg font-bold">{title}</h1>
