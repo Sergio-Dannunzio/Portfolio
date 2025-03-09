@@ -20,12 +20,12 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks, href, hrefCode }) 
     <>
       <div className="group flex flex-col bg-[#2020203e] rounded-xl my-4 justify-center mx-2 overflow-hidden">
         <div className="relative w-full overflow-hidden">
-          <img src={img} alt="" className=" w-full object-cover transition-transform duration-500 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-opacity duration-300 ease-in-out"></div>
+          <img src={img} alt="" className=" w-full object-cover transition-transform duration-400 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-opacity duration-400 ease-in-out"></div>
         </div>
             <div className="px-4 py-2">
                 <div className="flex justify-between items-center">
-                    <h1 className="text-lg font-bold">{title}</h1>
+                    <h1 className="text-lg font-bold group-hover:text-[#cfaaff]/70">{title}</h1>
                     {isfeatured && <p className="bg-[#cfaaff]/40 text-xs text-[#cfaaff] items-center flex h-5 rounded-3xl px-2"><FaStar className="mr-1"/>Featured</p>}
                 </div>
                 <div className="w-full mt-2">
