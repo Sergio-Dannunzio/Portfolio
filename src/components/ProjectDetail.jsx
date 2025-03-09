@@ -2,6 +2,7 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
+import { FaCode } from "react-icons/fa";
 
 const ProjectDetail = ({title, text, isfeatured, img, stacks, href, hrefCode }) => {
 
@@ -37,10 +38,10 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks, href, hrefCode }) 
                 </div>
             </div>
             <div className="flex items-center justify-center bg-[#414141]/30 py-4 mt-2 rounded-b-xl w-full">
-                <button className="bg-[#8b99f8] flex justify-center items-center w-1/3 p-3 rounded-xl hover:bg-[#8b99f8]/80 transition"
+                <button className="bg-[#8b99f8] flex justify-center items-center w-1/3 p-2.5 rounded-xl hover:bg-[#8b99f8]/80 transition"
                 onClick={() => handleShowProject()}><TbWorld className="mr-2" /> Live Demo</button>
-                <button className="bg-[#414141] rounded-xl p-3 w-1/3 ml-2 items-center flex justify-center hover:bg-[#414141]/70 transition"
-                onClick={() => handleShowCode()}>Source</button>
+                <button className="bg-[#414141] rounded-xl p-2.5 w-1/3 ml-2 items-center flex justify-center hover:bg-[#414141]/70 transition"
+                onClick={() => handleShowCode()}><FaCode className="mr-2"/>Source</button>
             </div>
         
       </div>
