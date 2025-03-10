@@ -25,7 +25,9 @@ const ProfileCard = () => {
             <CaractProfile text={"Spanish & English"} icon={<MdTranslate />}></CaractProfile>
             <CaractProfile text={"Argentina"} icon={<FaLocationDot />}></CaractProfile>
             <CaractProfile text={"23 y/o"} icon={<FaCalendar />}></CaractProfile>
-
+            <CaractProfile text={"Spanish & English"} icon={<MdTranslate />}></CaractProfile>
+            <CaractProfile text={"Argentina"} icon={<FaLocationDot />}></CaractProfile>
+            <CaractProfile text={"23 y/o"} icon={<FaCalendar />}></CaractProfile>
         </div>
         <div className="flex w-full mt-4">
           <button className="bg-[#8b99f8] hover:bg-[#8b99f8]/80 rounded-2xl p-3 w-1/2 mr-2 items-center flex justify-center text-[#000000]"><p className="pr-2 text-2xl"><IoIosMail  /></p> Hire Me</button>
