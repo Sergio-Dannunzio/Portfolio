@@ -43,6 +43,11 @@ const ProjectsDetail = () => {
     return (
       <>
           <div className="flex flex-col px-24 xl:px-72">
+            <div className="w-full flex items-center flex-col my-12">
+              <h1 className="text-3xl text-center md:text-4xl lg:text-5xl">Some of my projects</h1>
+              <p className="text-sm md:text-base mt-4 text-center text-[#b5b5b5]">Here you can find a collection of my public/open-source projects.</p>
+              <p className="text-sm md:text-base text-center text-[#b5b5b5]">Feel free to explore and check them out!</p>
+            </div>
             <div className="flex w-full">
               <ProjectDetail title={"33 Inmortals"} 
                 img={page1} 
