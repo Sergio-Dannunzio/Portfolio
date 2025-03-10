@@ -11,6 +11,8 @@ import { SiMongodb } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 const stacks33 = [
   { text: "Angular", bgcolor: "bg-[#ff3a3a]/10", color: "text-[#ff3a3a]", icon: <FaNodeJs  /> },
@@ -40,6 +42,13 @@ const stacksTranquiliza = [
 
 
 const ProjectsDetail = () => {
+
+  const navigate = useNavigate();
+
+  const handleShowHome = () => {
+    navigate(`/`);
+  };
+
     return (
       <>
           <div className="flex flex-col px-24 xl:px-72">
@@ -47,6 +56,8 @@ const ProjectsDetail = () => {
               <h1 className="text-3xl text-center md:text-4xl lg:text-5xl">Some of my projects</h1>
               <p className="text-sm md:text-base mt-4 text-center text-[#b5b5b5]">Here you can find a collection of my public/open-source projects.</p>
               <p className="text-sm md:text-base text-center text-[#b5b5b5]">Feel free to explore and check them out!</p>
+              <button className="group bg-[#8b99f8] hover:bg-[#8b99f8]/80 transition rounded-xl p-3 mt-4 items-center flex justify-center text-[#000000] text-[14px]" 
+                        onClick={() => handleShowHome()}><p className="pr-2 group-hover:-translate-x-1 transition"><FaArrowLeftLong /></p>Back to Home</button>
             </div>
             <div className="flex w-full">
               <ProjectDetail title={"33 Inmortals"} 
