@@ -5,3 +5,34 @@
   
 }
 
+@layer utilities {
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-l {
+    animation: slideInLeft 0.5s ease-out forwards;
+  }
+
+  .slide-in-r {
+    animation: slideInRight 0.5s ease-out forwards !important;
+  }
+}

@@ -44,21 +44,25 @@ const Home = () => {
         <div className="flex flex-col 2xl:flex-row xl:justify-between lg:items-center 2xl:items-start">
           <div className="flex flex-col lg:flex-row 2xl:w-2/3 2xl:justify-around lg:justify-center">
             <div className="flex flex-col px-2 lg:max-w-1/2 ">
-              <div className="my-2 w-full flex justify-center">
+              <div className="my-2 w-full flex justify-center slide-in-l"
+              style={{ "--animation-duration": "0.5s" }}>
                 <ProfileCard></ProfileCard>
               </div>
-              <div className="my-2 w-full flex justify-center">
+              <div className="my-2 w-full flex justify-center slide-in-l"
+              style={{ "--animation-duration": "0.65s" }}>
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
               </div>
-              <div className="my-2 hidden 2xl:flex 2xl:justify-center">
+              <div className="my-2 hidden 2xl:flex 2xl:justify-center slide-in-l"
+              style={{ "--animation-duration": "0.75s" }}>
                   <FraseCard></FraseCard>
                 </div>
             </div>
             <div className="flex flex-col px-2 lg:max-w-1/2">
-              <div className="hidden my-2 lg:flex lg:justify-center">
+              <div className="hidden my-2 lg:flex lg:justify-center slide-in-r">
                 <ProjectsCard />
               </div>
-              <div className="items-center hidden w-full my-2 lg:block">
+              <div className="items-center hidden w-full my-2 lg:block slide-in-r"
+              style={{ "--animation-duration": "0.75s" }}>
                 <StatsGithub></StatsGithub>
               </div>
             </div>
@@ -66,23 +70,26 @@ const Home = () => {
           <div className="flex w-full 2xl:w-1/3">
             <div className="flex flex-col w-full">
               <div className="flex flex-col justify-center items-center w-full 2xl:flex-col lg:flex-row lg:items-start">
-                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-end 2xl:justify-center">
+                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-end 2xl:justify-center slide-in-l"
+                style={{ "--animation-duration": "0.75s" }}>
                   <StackCard text={"Frontend Stack"} stacks={stacksFront} />
                 </div>
-                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-start 2xl:justify-center">
+                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-start 2xl:justify-center slide-in-l lg:slide-in-r"
+                style={{ "--animation-duration": "0.65s" }}>
                   <StackCard text={"Development Tools"} stacks={stacksDeveloper} />
                 </div>
-                <div className="w-full px-2 my-2 lg:hidden flex justify-center">
+                <div className="w-full px-2 my-2 lg:hidden flex justify-center slide-in-l"
+                style={{ "--animation-duration": "0.75s" }}>
                   <StatsGithub></StatsGithub>
                 </div>
               </div>
               <div className="flex flex-col w-full px-2 lg:max-w-1/2 ">
-                <div className="my-2 lg:hidden flex justify-center">
+                <div className="my-2 lg:hidden flex justify-center slide-in-l">
                   <ProjectsCard />
                 </div>
               </div>
               <div className="w-full px-2">
-              <div className="my-2 2xl:hidden flex justify-center">
+              <div className="my-2 2xl:hidden flex justify-center slide-in-l">
                   <FraseCard></FraseCard>
                 </div>
               </div>
