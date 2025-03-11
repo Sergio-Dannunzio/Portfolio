@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 #root {
   margin: 0 auto;
   padding: 12px;
@@ -17,22 +18,9 @@
     }
   }
 
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
   .slide-in-l {
-    animation: slideInLeft 0.5s ease-out forwards;
+    animation: slideInLeft var(--animation-duration, 0.5s) ease-out;
   }
 
-  .slide-in-r {
-    animation: slideInRight 0.5s ease-out forwards !important;
-  }
 }
+@import "tailwindcss";

@@ -45,24 +45,25 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row 2xl:w-2/3 2xl:justify-around lg:justify-center">
             <div className="flex flex-col px-2 lg:max-w-1/2 ">
               <div className="my-2 w-full flex justify-center slide-in-l"
-              style={{ "--animation-duration": "0.5s" }}>
+              style={{ "--animation-duration": "0.75s" }}>
                 <ProfileCard></ProfileCard>
               </div>
               <div className="my-2 w-full flex justify-center slide-in-l"
-              style={{ "--animation-duration": "0.65s" }}>
+              style={{ "--animation-duration": "0.8s" }}>
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
               </div>
               <div className="my-2 hidden 2xl:flex 2xl:justify-center slide-in-l"
-              style={{ "--animation-duration": "0.75s" }}>
+              style={{ "--animation-duration": "0.85s" }}>
                   <FraseCard></FraseCard>
                 </div>
             </div>
             <div className="flex flex-col px-2 lg:max-w-1/2">
-              <div className="hidden my-2 lg:flex lg:justify-center slide-in-r">
+              <div className="hidden my-2 lg:flex lg:justify-center slide-in-l"
+              style={{ "--animation-duration": "0.55s" }}>
                 <ProjectsCard />
               </div>
-              <div className="items-center hidden w-full my-2 lg:block slide-in-r"
-              style={{ "--animation-duration": "0.75s" }}>
+              <div className="items-center hidden w-full my-2 lg:block slide-in-l"
+              style={{ "--animation-duration": "0.6s" }}>
                 <StatsGithub></StatsGithub>
               </div>
             </div>
@@ -71,15 +72,15 @@ const Home = () => {
             <div className="flex flex-col w-full">
               <div className="flex flex-col justify-center items-center w-full 2xl:flex-col lg:flex-row lg:items-start">
                 <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-end 2xl:justify-center slide-in-l"
-                style={{ "--animation-duration": "0.75s" }}>
+                style={{ "--animation-duration": "0.45s" }}>
                   <StackCard text={"Frontend Stack"} stacks={stacksFront} />
                 </div>
-                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-start 2xl:justify-center slide-in-l lg:slide-in-r"
-                style={{ "--animation-duration": "0.65s" }}>
+                <div className="w-full px-2 my-2 lg:w-[540px] 2xl:w-full flex justify-center lg:justify-start 2xl:justify-center slide-in-l"
+                style={{ "--animation-duration": "0.5s" }}>
                   <StackCard text={"Development Tools"} stacks={stacksDeveloper} />
                 </div>
                 <div className="w-full px-2 my-2 lg:hidden flex justify-center slide-in-l"
-                style={{ "--animation-duration": "0.75s" }}>
+                style={{ "--animation-duration": "0.55s" }}>
                   <StatsGithub></StatsGithub>
                 </div>
               </div>
