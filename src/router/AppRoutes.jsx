@@ -21,7 +21,7 @@ function AppRoutes() {
 
 function AppWrapper() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <AppRoutes />
     </Router>
   );
