@@ -52,10 +52,10 @@ const Home = () => {
               style={{ "--animation-duration": "0.8s" }}>
                 <StackCard text={"Backend Stack"} stacks={stacksBack} />
               </div>
-              <div className="my-2 hidden 2xl:flex 2xl:justify-center slide-in-l"
+              {/*<div className="my-2 hidden 2xl:flex 2xl:justify-center slide-in-l"
               style={{ "--animation-duration": "0.85s" }}>
                   <FraseCard></FraseCard>
-                </div>
+                </div>*/}
             </div>
             <div className="flex flex-col px-2 lg:max-w-1/2">
               <div className="hidden my-2 lg:flex lg:justify-center slide-in-l"
@@ -90,9 +90,9 @@ const Home = () => {
                 </div>
               </div>
               <div className="w-full px-2">
-              <div className="my-2 2xl:hidden flex justify-center slide-in-l">
+              {/*<div className="my-2 2xl:hidden flex justify-center slide-in-l">
                   <FraseCard></FraseCard>
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>
