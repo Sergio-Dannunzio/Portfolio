@@ -19,6 +19,8 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks, href, hrefCode }) 
   return (
     <>
       <div className="group flex flex-col bg-[#2020203e] rounded-xl my-4 justify-between mx-2 overflow-hidden">
+        <div>
+
         <div className="relative w-full overflow-hidden">
           <img src={img} alt="" className=" w-full object-cover transition-transform duration-400 group-hover:scale-110" />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-opacity duration-400 ease-in-out"></div>
@@ -31,7 +33,8 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks, href, hrefCode }) 
                 <div className="w-full mt-2">
                   <p className="w-full text-sm">{text}</p>
                 </div>
-                <div className="flex flex-wrap gap-1 mt-2">
+        </div>
+                <div className="flex flex-wrap gap-1 mt-2 px-4 pb-2">
                   {stacks.map((stack, index) => (
                     <div key={index} className={`px-1 py-0.5 ${stack.bgcolor} rounded-2xl flex`}>
                       <p className={` ${stack.color}`}>{stack.icon}</p>
