@@ -78,13 +78,13 @@ const ProjectsDetail = () => {
             </div>
             <div className="flex flex-col lg:flex-row">
               <ProjectDetail title={"Crypto market"} img={page4}
-               text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
+               text={"Web app developed in React and TypeScript that fetches real-time cryptocurrency prices from an API, providing users with up-to-date market data and trends. Built with a focus on performance and usability."}
                featured={""}
                stacks={stacksCrypto}
                href={"https://sergio-dannunzio.github.io/crypto-tracker.github.io/"}
                hrefCode={"https://github.com/Sergio-Dannunzio/crypto-tracker.github.io"}></ProjectDetail>
               <ProjectDetail title={"Tranquiliza 360°"} img={page5}
-               text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
+               text={"Fullstack web app designed to offer immersive wellness experiences tailored to therapeutic and emotional needs. Developed using React, Tailwind CSS, Node.js, Express.js, and MongoDB for a seamless and engaging user experience."}
                featured={""}
                stacks={stacksTranquiliza}
                isfeatured={true}
