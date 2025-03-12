@@ -9,7 +9,7 @@ const StackCard = ({ text, stacks }) => {
         <div className="mt-4">
             {stacks.map((stack, index) => (
                 //<Stack key={index} text={stack.text} icon={stack.icon} />
-                <Stack key={index} text={stack.text} icon={stack.icon}></Stack>
+                <Stack key={index} text={stack.text} icon={stack.icon} href={stack.href}></Stack>
             ))}
         </div>
 

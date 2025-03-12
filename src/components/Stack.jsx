@@ -1,11 +1,19 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
+const Stack = ({ text, icon, href }) => {
 
-const Stack = ({ text, icon }) => {
+  const navigate = useNavigate();
+
+  const handleShowStack = () => {
+    window.open(href, "_blank");
+  };
+
   return (
     <>
-      <div className="group flex flex-col bg-[#000000] p-1 rounded-lg my-2 h-15 justify-center">
+      <div className="group flex flex-col bg-[#000000] p-1 rounded-lg my-2 h-15 justify-center"
+      onClick={() => handleShowStack()}>
         <div className="flex h-full items-center">
             <div className="bg-[#1b1b1bc6] w-12 h-full mr-2 rounded-lg flex justify-center items-center text-[#8b99f8]">
                 <p className="text-3xl group-hover:text-[#8b99f8]/60">{icon}</p>

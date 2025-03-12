@@ -19,23 +19,23 @@ import StatsGithub from "../components/StatsGithub";
 
 
 const stacksFront = [
-  { text: "Javascript", icon: <FaAngular  /> },
-  { text: "Typescript", icon: <FaReact  /> },
-  { text: "Tailwind CSS", icon: <RiTailwindCssFill  /> },
-  { text: "Sass", icon: <FaSass  /> },
+  { text: "Javascript", icon: <FaAngular  />, href: "https://developer.mozilla.org/es/docs/Web/JavaScript" },
+  { text: "Typescript", icon: <FaReact  />, href: "https://www.typescriptlang.org/" },
+  { text: "Tailwind CSS", icon: <RiTailwindCssFill  />, href: "https://tailwindcss.com/" },
+  { text: "Sass", icon: <FaSass  />, href: "https://sass-lang.com/" },
 ];
 
 const stacksBack = [
-  { text: "Java", icon: <FaJava  /> },
-  { text: "SpringBoot", icon: <BiLogoSpringBoot  /> },
-  { text: "My Sql", icon: <DiMysql  /> },
-  { text: "Php", icon: <FaPhp   /> },
+  { text: "Java", icon: <FaJava  />, href: "https://www.java.com/en/" },
+  { text: "SpringBoot", icon: <BiLogoSpringBoot  />, href: "https://spring.io/" },
+  { text: "MySql", icon: <DiMysql  />, href: "https://www.mysql.com/" },
+  { text: "Php", icon: <FaPhp   />, href: "https://www.php.net/" },
 ];
 const stacksDeveloper = [
-  { text: "Github", icon: <FaGithub  /> },
-  { text: "Visual Studio Code", icon: <BiLogoVisualStudio   /> },
-  { text: "Postman", icon: <SiPostman   /> },
-  { text: "Figma", icon: <SiFigma   /> },
+  { text: "Github", icon: <FaGithub  />, href: "https://github.com/" },
+  { text: "Visual Studio Code", icon: <BiLogoVisualStudio   />, href: "https://code.visualstudio.com/" },
+  { text: "Postman", icon: <SiPostman   />, href: "https://www.postman.com/" },
+  { text: "Figma", icon: <SiFigma   />, href: "https://www.figma.com/" },
 ];
 
 const Home = () => {
