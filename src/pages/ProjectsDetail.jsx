@@ -52,24 +52,24 @@ const ProjectsDetail = () => {
     return (
       <>
           <div className="flex flex-col px-2 md:px-24 2xl:px-72">
-            <div className="w-full flex items-center flex-col my-12">
+            <div className="flex flex-col items-center w-full my-12">
               <h1 className="text-3xl text-center md:text-4xl lg:text-5xl">Some of my projects</h1>
               <p className="text-sm md:text-base mt-4 text-center text-[#b5b5b5]">Here you can find a collection of my public/open-source projects.</p>
               <p className="text-sm md:text-base text-center text-[#b5b5b5]">Feel free to explore and check them out!</p>
               <button className="group bg-[#8b99f8] hover:bg-[#8b99f8]/80 transition rounded-xl p-3 mt-4 items-center flex justify-center text-[#000000] text-[14px]" 
-                        onClick={() => handleShowHome()}><p className="pr-2 group-hover:-translate-x-1 transition"><FaArrowLeftLong /></p>Back to Home</button>
+                        onClick={() => handleShowHome()}><p className="pr-2 transition group-hover:-translate-x-1"><FaArrowLeftLong /></p>Back to Home</button>
             </div>
             <div className="flex flex-col w-full lg:flex-row">
               <ProjectDetail title={"33 Inmortals"} 
                 img={page1} 
-                text={"loremaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaaa"}
+                text={"Web app developed in Angular to promote the game 33 Immortals, showcasing its features and visuals to engage potential players. Built solo with a focus on performance and user experience."}
                 featured={""}
                 stacks={stacks33}
                 href={"https://sergio-dannunzio.github.io/game-app/"}
                 hrefCode={"https://github.com/Sergio-Dannunzio/game-app"}></ProjectDetail>
               <ProjectDetail title={"Bariló"}
                img={page3}
-                text={"loremaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa aaaaaaaaaa"}
+                text={"A web app that allows students to self-manage their trip to Bariloche, streamlining activity organization and management. Developed with React, TypeScript, and Tailwind CSS in a multidisciplinary team."}
                 featured={""}
                 stacks={stacksBarilo}
                 isfeatured={true}
