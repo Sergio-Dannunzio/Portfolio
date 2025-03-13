@@ -12,7 +12,7 @@ const Stack = ({ text, icon, href }) => {
 
   return (
     <>
-      <div className="group flex flex-col bg-[#000000] p-1 rounded-lg my-2 h-15 justify-center"
+      <div className="group flex flex-col bg-[#000000] p-1 rounded-lg my-2 h-15 justify-center cursor-pointer"
       onClick={() => handleShowStack()}>
         <div className="flex h-full items-center">
             <div className="bg-[#1b1b1bc6] w-12 h-full mr-2 rounded-lg flex justify-center items-center text-[#8b99f8]">

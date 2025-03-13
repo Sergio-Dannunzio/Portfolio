@@ -44,9 +44,9 @@ const ProjectDetail = ({title, text, isfeatured, img, stacks, href, hrefCode }) 
                 </div>
             </div>
             <div className="flex items-center justify-center bg-[#414141]/30 py-4 mt-2 rounded-b-xl w-full">
-                <button className="bg-[#8b99f8] flex justify-center items-center w-full p-2.5 mx-1.5 sm:w-1/3 rounded-xl hover:bg-[#8b99f8]/80 transition text-sm"
+                <button className="bg-[#8b99f8] flex justify-center items-center w-full p-2.5 mx-1.5 sm:w-1/3 rounded-xl hover:bg-[#8b99f8]/80 transition text-sm cursor-pointer"
                 onClick={() => handleShowProject()}><TbWorld className="mr-1" /> Live Demo</button>
-                <button className="bg-[#414141] rounded-xl p-2.5 w-full mx-1.5 sm:w-1/3 items-center flex justify-center hover:bg-[#414141]/70 transition text-sm"
+                <button className="bg-[#414141] rounded-xl p-2.5 w-full mx-1.5 sm:w-1/3 items-center flex justify-center hover:bg-[#414141]/70 transition text-sm cursor-pointer"
                 onClick={() => handleShowCode()}><FaCode className="mr-1"/>Source</button>
             </div>
         

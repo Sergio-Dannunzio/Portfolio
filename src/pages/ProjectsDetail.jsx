@@ -56,7 +56,7 @@ const ProjectsDetail = () => {
               <h1 className="text-3xl text-center md:text-4xl lg:text-5xl">Some of my projects</h1>
               <p className="text-sm md:text-base mt-4 text-center text-[#b5b5b5]">Here you can find a collection of my public/open-source projects.</p>
               <p className="text-sm md:text-base text-center text-[#b5b5b5]">Feel free to explore and check them out!</p>
-              <button className="group bg-[#8b99f8] hover:bg-[#8b99f8]/80 transition rounded-xl p-3 mt-4 items-center flex justify-center text-[#000000] text-[14px]" 
+              <button className="group bg-[#8b99f8] hover:bg-[#8b99f8]/80 transition rounded-xl p-3 mt-4 items-center flex justify-center text-[#000000] text-[14px] cursor-pointer" 
                         onClick={() => handleShowHome()}><p className="pr-2 transition group-hover:-translate-x-1"><FaArrowLeftLong /></p>Back to Home</button>
             </div>
             <div className="flex flex-col w-full lg:flex-row">
