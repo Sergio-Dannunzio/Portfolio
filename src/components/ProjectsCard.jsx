@@ -30,7 +30,7 @@ const ProjectsCard = () => {
           <BsSuitcaseLgFill className="text-[#8b99f8] text-3xl mr-2"/>
           <h1 className="text-2xl">Projects</h1>
         </div>
-        <p className="text-sm mb-2 text-[#5d5d5d]">Here are some of the projects i have worked on</p>
+        <p className="text-sm mb-2 text-[#8b8b8b]">Here are some of the projects i have worked on</p>
         <div className="opacity-50">
             <Swiper
                 modules={[Autoplay]}
