@@ -67,7 +67,7 @@ const Home = () => {
               style={{ "--animation-duration": "0.6s" }}>
                 <StatsGithub></StatsGithub>
               </div>
-              <div className="items-center hidden w-full my-2 lg:block slide-in-l"
+              <div className="items-center hidden w-full my-2 2xl:block slide-in-l"
               style={{ "--animation-duration": "0.6s" }}>
                 <RightsCard></RightsCard>
               </div>
@@ -95,9 +95,10 @@ const Home = () => {
                 </div>
               </div>
               <div className="w-full px-2">
-              {/*<div className="my-2 2xl:hidden flex justify-center slide-in-l">
-                  <FraseCard></FraseCard>
-                </div>*/}
+              <div className="my-2 2xl:hidden flex justify-center slide-in-l">
+                  {/*<FraseCard></FraseCard>*/}
+                  <RightsCard></RightsCard>
+                </div>
               </div>
             </div>
           </div>
