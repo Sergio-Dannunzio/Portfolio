@@ -16,6 +16,7 @@ import { SiPostman } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import FraseCard from "../components/FraseCard";
 import StatsGithub from "../components/StatsGithub";
+import RightsCard from "../components/RightsCard";
 
 
 const stacksFront = [
@@ -65,6 +66,10 @@ const Home = () => {
               <div className="items-center hidden w-full my-2 lg:block slide-in-l"
               style={{ "--animation-duration": "0.6s" }}>
                 <StatsGithub></StatsGithub>
+              </div>
+              <div className="items-center hidden w-full my-2 lg:block slide-in-l"
+              style={{ "--animation-duration": "0.6s" }}>
+                <RightsCard></RightsCard>
               </div>
             </div>
           </div>
