@@ -12,16 +12,16 @@ const RightsCard = () => {
 
   return (
     <>
-      <div className="group flex flex-col justify-center my-6"
+      <div className="flex flex-col justify-center my-6 group"
       >
-        <div className="flex w-full items-center justify-center text-sm my-4">
-            <p>Made By</p> <span class="relative text-[#8b99f8] font-bold ml-1 cursor-pointer"
+        <div className="flex items-center justify-center w-full my-4 text-sm">
+            <p>Made By</p> <span className="relative text-[#8b99f8] font-bold ml-1 cursor-pointer"
             onClick={handleShowProfile}>
             Sergio
-            <span class="absolute inset-0 -z-10 bg-[#8b99f8] rounded-full blur-lg opacity-75 scale-150"></span>
+            <span className="absolute inset-0 -z-10 bg-[#8b99f8] rounded-full blur-lg opacity-75 scale-150"></span>
             </span>
         </div>
-        <div className="flex w-full items-center justify-center text-sm">
+        <div className="flex items-center justify-center w-full text-sm">
             <p>© 2025 All rights reserved</p>
         </div>
       </div>
